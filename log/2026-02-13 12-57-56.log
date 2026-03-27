@@ -1,0 +1,1037 @@
+2026-02-13 12:57:56,426 - root - INFO - 合并后的收益率数据预览：
+2026-02-13 12:57:56,435 - root - INFO -                 CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团        LC
+2026-02-13 12:57:56,435 - root - INFO - 日期                                                            ...
+2026-02-13 12:57:56,435 - root - INFO - 2024-01-03 -0.006467           -0.000929           -0.000929  ...          -0.024691           0.003058 -0.016151
+2026-02-13 12:57:56,435 - root - INFO - 2024-01-04 -0.029132           -0.008369           -0.008369  ...          -0.028081          -0.003049 -0.057692
+2026-02-13 12:57:56,435 - root - INFO - 2024-01-05 -0.001957            0.015003            0.015003  ...          -0.023129          -0.003058 -0.017919
+2026-02-13 12:57:56,435 - root - INFO - 2024-01-08 -0.005882           -0.011086           -0.011086  ...          -0.005900          -0.008481 -0.014698
+2026-02-13 12:57:56,435 - root - INFO - 2024-01-09 -0.008547            0.002803            0.002803  ...           0.001127           0.003913  0.018004
+2026-02-13 12:57:56,435 - root - INFO - ...              ...                 ...                 ...  ...                ...                ...       ...
+2026-02-13 12:57:56,435 - root - INFO - 2025-12-25 -0.006647            0.001364            0.001364  ...          -0.002071           0.000000 -0.009622
+2026-02-13 12:57:56,435 - root - INFO - 2025-12-26  0.003662           -0.001363           -0.001363  ...           0.006226           0.001808  0.056671
+2026-02-13 12:57:56,435 - root - INFO - 2025-12-29 -0.013177            0.001364            0.001364  ...          -0.006188          -0.004265 -0.089641
+2026-02-13 12:57:56,435 - root - INFO - 2025-12-30 -0.000290           -0.005450           -0.005450  ...           0.000000          -0.000659  0.023228
+2026-02-13 12:57:56,435 - root - INFO - 2025-12-31 -0.005061           -0.004795           -0.004795  ...          -0.002681          -0.004533  0.000000
+2026-02-13 12:57:56,435 - root - INFO - 
+2026-02-13 12:57:56,435 - root - INFO - [484 rows x 10 columns]
+2026-02-13 12:57:56,436 - root - ERROR - D:\anaconda\Lib\site-packages\statsmodels\tsa\stattools.py:1545: FutureWarning: verbose is deprecated since functions should not print results
+2026-02-13 12:57:56,436 - root - ERROR -   warnings.warn(
+2026-02-13 12:57:57,229 - root - INFO - 因果网络构建完成：
+2026-02-13 12:57:57,235 - root - INFO -                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,235 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,235 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,236 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,236 - root - INFO - 
+2026-02-13 12:57:57,236 - root - INFO - [10 rows x 10 columns]
+2026-02-13 12:57:57,838 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,845 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,845 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,845 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,845 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,845 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,845 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,845 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,845 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,845 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,845 - root - INFO -                 ...
+2026-02-13 12:57:57,845 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,845 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,845 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,845 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,845 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,845 - root - INFO - Name: CATL, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,845 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,845 - root - INFO - 
+2026-02-13 12:57:57,845 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,852 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,859 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,859 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,859 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,859 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,859 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,859 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,859 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,859 - root - INFO -                 ...
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,859 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,859 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,859 - root - INFO -                 ...
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,859 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,859 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,859 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,859 - root - INFO - 
+2026-02-13 12:57:57,859 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,865 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,874 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,874 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,874 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,874 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,874 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,874 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,874 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,874 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,874 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,874 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,874 - root - INFO -                 ...
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,874 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,874 - root - INFO -                 ...
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,874 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,874 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,874 - root - INFO -                 ...
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,874 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,874 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,874 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,874 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,875 - root - INFO - 
+2026-02-13 12:57:57,875 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,881 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,890 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,890 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,890 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,890 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,890 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,890 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,890 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,890 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,890 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,890 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,890 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,890 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,890 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,890 - root - INFO -                 ...
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,890 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,890 - root - INFO -                 ...
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,890 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,890 - root - INFO -                 ...
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,890 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,890 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,890 - root - INFO -                 ...
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,890 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,890 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,890 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,890 - root - INFO - 
+2026-02-13 12:57:57,891 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,896 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,905 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,905 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,905 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,905 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,905 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,905 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,905 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,905 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,905 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,905 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,905 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,905 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,905 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,905 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:57,905 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,907 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,907 - root - INFO -                 ...
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,907 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,907 - root - INFO -                 ...
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,907 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,907 - root - INFO -                 ...
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,907 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,907 - root - INFO -                 ...
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,907 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:57,907 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:57,907 - root - INFO -                 ...
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:57,907 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:57,907 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,907 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,908 - root - INFO - 
+2026-02-13 12:57:57,908 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,912 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,922 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,922 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,922 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,922 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,922 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,922 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,922 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,922 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,922 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,922 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,922 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,922 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,922 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,922 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:57,922 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,922 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}, 'downstream_1_比亚迪': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,922 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04,
+2026-02-13 12:57:57,922 - root - INFO -         2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,922 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04]), 'intercept': 0.0011078062084115888}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,922 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,922 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,922 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,922 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,922 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,922 - root - INFO -                 ...
+2026-02-13 12:57:57,922 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,922 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,922 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,922 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,922 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,922 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,924 - root - INFO -                 ...
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,924 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,924 - root - INFO -                 ...
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,924 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,924 - root - INFO -                 ...
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,924 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,924 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:57,924 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:57,925 - root - INFO -                 ...
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:57,925 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64, 'downstream_1_比亚迪': 日期
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-15   -0.009923
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-16    0.001432
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-17   -0.041957
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-18    0.018828
+2026-02-13 12:57:57,925 - root - INFO - 2024-01-19   -0.002218
+2026-02-13 12:57:57,925 - root - INFO -                 ...
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-25    0.003835
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-26    0.050867
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-29   -0.000508
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-30   -0.008578
+2026-02-13 12:57:57,925 - root - INFO - 2025-12-31   -0.020159
+2026-02-13 12:57:57,925 - root - INFO - Name: downstream_1_比亚迪, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,925 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,925 - root - INFO - 
+2026-02-13 12:57:57,925 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,931 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,941 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,941 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,941 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,941 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,941 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,941 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,941 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,941 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,941 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,941 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,941 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,942 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,942 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:57,942 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}, 'downstream_1_比亚迪': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04,
+2026-02-13 12:57:57,942 - root - INFO -         2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04]), 'intercept': 0.0011078062084115888}, 'downstream_2_长城汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,942 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04]), 'intercept': 0.00015003682827067683}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,942 - root - INFO -                 ...
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,942 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,942 - root - INFO -                 ...
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,942 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,942 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,942 - root - INFO -                 ...
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,942 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,943 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,943 - root - INFO -                 ...
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,943 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:57,943 - root - INFO -                 ...
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:57,943 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64, 'downstream_1_比亚迪': 日期
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-15   -0.009923
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-16    0.001432
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-17   -0.041957
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-18    0.018828
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-19   -0.002218
+2026-02-13 12:57:57,943 - root - INFO -                 ...
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-25    0.003835
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-26    0.050867
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-29   -0.000508
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-30   -0.008578
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-31   -0.020159
+2026-02-13 12:57:57,943 - root - INFO - Name: downstream_1_比亚迪, Length: 476, dtype: float64, 'downstream_2_长城汽车': 日期
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-15   -0.004643
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-16    0.004428
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-17   -0.030577
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-18    0.010427
+2026-02-13 12:57:57,943 - root - INFO - 2024-01-19   -0.000461
+2026-02-13 12:57:57,943 - root - INFO -                 ...
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-25    0.005110
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-26    0.023143
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-29   -0.006854
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-30   -0.005373
+2026-02-13 12:57:57,943 - root - INFO - 2025-12-31    0.004382
+2026-02-13 12:57:57,943 - root - INFO - Name: downstream_2_长城汽车, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,943 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,943 - root - INFO - 
+2026-02-13 12:57:57,944 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,952 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,963 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,963 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,963 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,963 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,963 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,963 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,963 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,963 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,963 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,963 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,963 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,963 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,963 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:57,963 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}, 'downstream_1_比亚迪': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04,
+2026-02-13 12:57:57,963 - root - INFO -         2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04]), 'intercept': 0.0011078062084115888}, 'downstream_2_长城汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,963 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04]), 'intercept': 0.00015003682827067683}, 'downstream_3_长安汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-2.24431631e+09,  5.67991026e+10, -7.65956943e+09,  5.08482851e+11,
+2026-02-13 12:57:57,963 - root - INFO -        -9.12164068e+11,  5.23540693e+09,  7.75600570e+10, -5.91297997e+11,
+2026-02-13 12:57:57,963 - root - INFO -         2.24431631e+09, -5.67991026e+10,  7.65956943e+09, -5.08482851e+11,
+2026-02-13 12:57:57,963 - root - INFO -         9.12164068e+11, -5.23540693e+09, -7.75600570e+10,  5.91297997e+11]), 'intercept': -9.008773578617584e-05}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,963 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,963 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,963 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,963 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,963 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,963 - root - INFO -                 ...
+2026-02-13 12:57:57,963 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,963 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,963 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,963 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,963 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,963 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,964 - root - INFO -                 ...
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,964 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,964 - root - INFO -                 ...
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,964 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,964 - root - INFO -                 ...
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,964 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:57,964 - root - INFO -                 ...
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:57,964 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64, 'downstream_1_比亚迪': 日期
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-15   -0.009923
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-16    0.001432
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-17   -0.041957
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-18    0.018828
+2026-02-13 12:57:57,964 - root - INFO - 2024-01-19   -0.002218
+2026-02-13 12:57:57,964 - root - INFO -                 ...
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-25    0.003835
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-26    0.050867
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-29   -0.000508
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-30   -0.008578
+2026-02-13 12:57:57,964 - root - INFO - 2025-12-31   -0.020159
+2026-02-13 12:57:57,964 - root - INFO - Name: downstream_1_比亚迪, Length: 476, dtype: float64, 'downstream_2_长城汽车': 日期
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-15   -0.004643
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-16    0.004428
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-17   -0.030577
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-18    0.010427
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-19   -0.000461
+2026-02-13 12:57:57,965 - root - INFO -                 ...
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-25    0.005110
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-26    0.023143
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-29   -0.006854
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-30   -0.005373
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-31    0.004382
+2026-02-13 12:57:57,965 - root - INFO - Name: downstream_2_长城汽车, Length: 476, dtype: float64, 'downstream_3_长安汽车': 日期
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-15    0.013047
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-16    0.032049
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-17   -0.050252
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-18    0.009811
+2026-02-13 12:57:57,965 - root - INFO - 2024-01-19   -0.008522
+2026-02-13 12:57:57,965 - root - INFO -                 ...
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-25   -0.001981
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-26    0.004363
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-29   -0.004938
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-30    0.000700
+2026-02-13 12:57:57,965 - root - INFO - 2025-12-31   -0.003323
+2026-02-13 12:57:57,965 - root - INFO - Name: downstream_3_长安汽车, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,965 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,965 - root - INFO - 
+2026-02-13 12:57:57,965 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:57,972 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:57,989 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:57,989 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:57,989 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:57,989 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,989 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,990 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,990 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:57,990 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:57,990 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:57,990 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,990 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:57,990 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:57,990 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:57,990 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}, 'downstream_1_比亚迪': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04,
+2026-02-13 12:57:57,990 - root - INFO -         2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04]), 'intercept': 0.0011078062084115888}, 'downstream_2_长城汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04]), 'intercept': 0.00015003682827067683}, 'downstream_3_长安汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-2.24431631e+09,  5.67991026e+10, -7.65956943e+09,  5.08482851e+11,
+2026-02-13 12:57:57,990 - root - INFO -        -9.12164068e+11,  5.23540693e+09,  7.75600570e+10, -5.91297997e+11,
+2026-02-13 12:57:57,990 - root - INFO -         2.24431631e+09, -5.67991026e+10,  7.65956943e+09, -5.08482851e+11,
+2026-02-13 12:57:57,990 - root - INFO -         9.12164068e+11, -5.23540693e+09, -7.75600570e+10,  5.91297997e+11]), 'intercept': -9.008773578617584e-05}, 'downstream_4_上汽集团': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-8.72862817e-05, -6.16171076e-05,  1.16234621e-04, -5.98790141e-04,
+2026-02-13 12:57:57,990 - root - INFO -         3.22073582e-04,  4.22724914e-04, -8.88287064e-05,  3.75475616e-04,
+2026-02-13 12:57:57,990 - root - INFO -        -8.72862817e-05, -6.16171076e-05,  1.16234621e-04, -5.98790141e-04,
+2026-02-13 12:57:57,990 - root - INFO -         3.22073582e-04,  4.22724914e-04, -8.88287064e-05,  3.75475616e-04]), 'intercept': 0.0002598279246459784}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:57,990 - root - INFO -                 ...
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:57,990 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,990 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,990 - root - INFO -                 ...
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,990 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,991 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:57,991 - root - INFO -                 ...
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:57,991 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:57,991 - root - INFO -                 ...
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:57,991 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:57,991 - root - INFO -                 ...
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:57,991 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:57,991 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64, 'downstream_1_比亚迪': 日期
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-15   -0.009923
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-16    0.001432
+2026-02-13 12:57:57,991 - root - INFO - 2024-01-17   -0.041957
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-18    0.018828
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-19   -0.002218
+2026-02-13 12:57:57,992 - root - INFO -                 ...
+2026-02-13 12:57:57,992 - root - INFO - 2025-12-25    0.003835
+2026-02-13 12:57:57,992 - root - INFO - 2025-12-26    0.050867
+2026-02-13 12:57:57,992 - root - INFO - 2025-12-29   -0.000508
+2026-02-13 12:57:57,992 - root - INFO - 2025-12-30   -0.008578
+2026-02-13 12:57:57,992 - root - INFO - 2025-12-31   -0.020159
+2026-02-13 12:57:57,992 - root - INFO - Name: downstream_1_比亚迪, Length: 476, dtype: float64, 'downstream_2_长城汽车': 日期
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-15   -0.004643
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-16    0.004428
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-17   -0.030577
+2026-02-13 12:57:57,992 - root - INFO - 2024-01-18    0.010427
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-19   -0.000461
+2026-02-13 12:57:57,993 - root - INFO -                 ...
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-25    0.005110
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-26    0.023143
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-29   -0.006854
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-30   -0.005373
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-31    0.004382
+2026-02-13 12:57:57,993 - root - INFO - Name: downstream_2_长城汽车, Length: 476, dtype: float64, 'downstream_3_长安汽车': 日期
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-15    0.013047
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-16    0.032049
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-17   -0.050252
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-18    0.009811
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-19   -0.008522
+2026-02-13 12:57:57,993 - root - INFO -                 ...
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-25   -0.001981
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-26    0.004363
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-29   -0.004938
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-30    0.000700
+2026-02-13 12:57:57,993 - root - INFO - 2025-12-31   -0.003323
+2026-02-13 12:57:57,993 - root - INFO - Name: downstream_3_长安汽车, Length: 476, dtype: float64, 'downstream_4_上汽集团': 日期
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-15    0.000578
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-16    0.005459
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-17   -0.007730
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-18    0.004347
+2026-02-13 12:57:57,993 - root - INFO - 2024-01-19    0.000639
+2026-02-13 12:57:57,995 - root - INFO -                 ...
+2026-02-13 12:57:57,995 - root - INFO - 2025-12-25    0.000640
+2026-02-13 12:57:57,995 - root - INFO - 2025-12-26    0.001489
+2026-02-13 12:57:57,995 - root - INFO - 2025-12-29   -0.005173
+2026-02-13 12:57:57,995 - root - INFO - 2025-12-30   -0.000187
+2026-02-13 12:57:57,995 - root - INFO - 2025-12-31   -0.005078
+2026-02-13 12:57:57,995 - root - INFO - Name: downstream_4_上汽集团, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:57,995 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:57,995 - root - INFO - 
+2026-02-13 12:57:57,995 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:58,007 - root - INFO - SCM结构构建完成：
+2026-02-13 12:57:58,023 - root - INFO - {'variables': ['CATL', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车', 'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'], 'parents': {'CATL': ['market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能', 'LC'], 'market_data_1_上证综指': ['downstream_3_长安汽车', 'LC'], 'market_data_2_深证成指': ['downstream_3_长安汽车', 'LC'], 'upstream_1_湖南裕能': [], 'upstream_2_盛新锂能': [], 'downstream_1_比亚迪': [], 'downstream_2_长城汽车': [], 'downstream_3_长安汽车': [], 'downstream_4_上汽集团': [], 'LC': []}, 'models': {'CATL': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'market_data_1_上证综指': [], 'market_data_2_深证成指': [], 'upstream_1_湖南裕能': [], 'LC': []}}, 'coefficients': array([ 7.92531381e+07,  2.09369679e+10,  1.91616912e+10, -2.93415503e+10,
+2026-02-13 12:57:58,023 - root - INFO -         4.54111555e+09, -4.44185951e+11,  7.03861284e+08, -2.81216368e+08,
+2026-02-13 12:57:58,023 - root - INFO -        -7.92531381e+07, -2.09369679e+10, -1.91616912e+10,  2.93415503e+10,
+2026-02-13 12:57:58,023 - root - INFO -        -4.54111555e+09,  4.44185951e+11, -7.03861284e+08,  2.81216368e+08]), 'intercept': 0.0021927368227615293}, 'market_data_1_上证综指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:58,023 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:58,023 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:58,023 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'market_data_2_深证成指': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {'downstream_3_长安汽车': [], 'LC': []}}, 'coefficients': array([ 2.27275354e+09, -9.75691806e+08, -9.07290026e+11, -1.55327196e+09,
+2026-02-13 12:57:58,024 - root - INFO -         2.60838749e+10, -2.38260356e+09,  2.31417619e+10, -7.04394080e+09,
+2026-02-13 12:57:58,024 - root - INFO -        -2.27275354e+09,  9.75691806e+08,  9.07290026e+11,  1.55327196e+09,
+2026-02-13 12:57:58,024 - root - INFO -        -2.60838749e+10,  2.38260356e+09, -2.31417619e+10,  7.04394080e+09]), 'intercept': 0.0006991411893719658}, 'upstream_1_湖南裕能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:58,024 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04,
+2026-02-13 12:57:58,024 - root - INFO -         2.13453955e-04,  2.76904340e-04, -2.83987321e-04,  2.10967752e-03,
+2026-02-13 12:57:58,024 - root - INFO -        -7.66068579e-04,  5.71267316e-05, -1.18228178e-03, -7.75816716e-04]), 'intercept': 0.002130256263296682}, 'upstream_2_盛新锂能': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05,
+2026-02-13 12:57:58,024 - root - INFO -         7.10022239e-04,  3.58667904e-04, -9.73134343e-04,  3.08702640e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -5.16026214e-04,  6.75859775e-04, -1.55225995e-04, -5.85718963e-05]), 'intercept': 0.0013222373362418807}, 'downstream_1_比亚迪': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04,
+2026-02-13 12:57:58,024 - root - INFO -         2.26136012e-04,  7.25266248e-04, -8.37167092e-05, -2.10393099e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -1.28675368e-04, -9.82561049e-04, -2.44348762e-04,  2.36926102e-04]), 'intercept': 0.0011078062084115888}, 'downstream_2_长城汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -3.86245969e-04,  2.82762588e-04,  3.72328621e-04,  1.83150916e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -1.73099770e-04,  2.16895369e-05, -1.04670407e-03, -2.67919904e-04]), 'intercept': 0.00015003682827067683}, 'downstream_3_长安汽车': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-2.24431631e+09,  5.67991026e+10, -7.65956943e+09,  5.08482851e+11,
+2026-02-13 12:57:58,024 - root - INFO -        -9.12164068e+11,  5.23540693e+09,  7.75600570e+10, -5.91297997e+11,
+2026-02-13 12:57:58,024 - root - INFO -         2.24431631e+09, -5.67991026e+10,  7.65956943e+09, -5.08482851e+11,
+2026-02-13 12:57:58,024 - root - INFO -         9.12164068e+11, -5.23540693e+09, -7.75600570e+10,  5.91297997e+11]), 'intercept': -9.008773578617584e-05}, 'downstream_4_上汽集团': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([-8.72862817e-05, -6.16171076e-05,  1.16234621e-04, -5.98790141e-04,
+2026-02-13 12:57:58,024 - root - INFO -         3.22073582e-04,  4.22724914e-04, -8.88287064e-05,  3.75475616e-04,
+2026-02-13 12:57:58,024 - root - INFO -        -8.72862817e-05, -6.16171076e-05,  1.16234621e-04, -5.98790141e-04,
+2026-02-13 12:57:58,024 - root - INFO -         3.22073582e-04,  4.22724914e-04, -8.88287064e-05,  3.75475616e-04]), 'intercept': 0.0002598279246459784}, 'LC': {'model': LinearRegression(), 'scaler': StandardScaler(), 'feature_num': 16, 'feature_indices': {'auto_regressive': [0, 1, 2, 3, 4, 5, 6, 7], 'parents': {}}, 'coefficients': array([ 1.68278443e+09, -1.16365706e+09,  5.99248941e+07, -1.02029503e+11,
+2026-02-13 12:57:58,024 - root - INFO -        -1.18526677e+09, -2.29917087e+10,  1.49410510e+09, -1.42487421e+09,
+2026-02-13 12:57:58,024 - root - INFO -        -1.68278443e+09,  1.16365706e+09, -5.99248941e+07,  1.02029503e+11,
+2026-02-13 12:57:58,024 - root - INFO -         1.18526677e+09,  2.29917087e+10, -1.49410510e+09,  1.42487421e+09]), 'intercept': 0.0006379007694990416}}, 'residuals': {'CATL': 日期
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-15   -0.021865
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-16    0.033774
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-17   -0.034315
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-18    0.008045
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-19    0.008170
+2026-02-13 12:57:58,024 - root - INFO -                 ...
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-25   -0.010915
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-26    0.003239
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-29   -0.019153
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-30   -0.004192
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-31   -0.005850
+2026-02-13 12:57:58,024 - root - INFO - Name: CATL, Length: 476, dtype: float64, 'market_data_1_上证综指': 日期
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:58,024 - root - INFO -                 ...
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:58,024 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:58,024 - root - INFO - Name: market_data_1_上证综指, Length: 476, dtype: float64, 'market_data_2_深证成指': 日期
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-15    0.000834
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-16    0.010409
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-17   -0.009171
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-18   -0.005163
+2026-02-13 12:57:58,024 - root - INFO - 2024-01-19   -0.002688
+2026-02-13 12:57:58,024 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25    0.001174
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26   -0.002340
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29    0.000390
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30   -0.005484
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31   -0.005620
+2026-02-13 12:57:58,025 - root - INFO - Name: market_data_2_深证成指, Length: 476, dtype: float64, 'upstream_1_湖南裕能': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15   -0.033713
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.002910
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.043783
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.003477
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19   -0.019924
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25   -0.015350
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.064521
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.061730
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30   -0.010942
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31   -0.027904
+2026-02-13 12:57:58,025 - root - INFO - Name: upstream_1_湖南裕能, Length: 476, dtype: float64, 'upstream_2_盛新锂能': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15   -0.017362
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.019322
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.049668
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.016996
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19    0.051705
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25   -0.043040
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.031497
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.063686
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30    0.010136
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31    0.030080
+2026-02-13 12:57:58,025 - root - INFO - Name: upstream_2_盛新锂能, Length: 476, dtype: float64, 'downstream_1_比亚迪': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15   -0.009923
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.001432
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.041957
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.018828
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19   -0.002218
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25    0.003835
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.050867
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.000508
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30   -0.008578
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31   -0.020159
+2026-02-13 12:57:58,025 - root - INFO - Name: downstream_1_比亚迪, Length: 476, dtype: float64, 'downstream_2_长城汽车': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15   -0.004643
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.004428
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.030577
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.010427
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19   -0.000461
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25    0.005110
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.023143
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.006854
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30   -0.005373
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31    0.004382
+2026-02-13 12:57:58,025 - root - INFO - Name: downstream_2_长城汽车, Length: 476, dtype: float64, 'downstream_3_长安汽车': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15    0.013047
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.032049
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.050252
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.009811
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19   -0.008522
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25   -0.001981
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.004363
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.004938
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30    0.000700
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31   -0.003323
+2026-02-13 12:57:58,025 - root - INFO - Name: downstream_3_长安汽车, Length: 476, dtype: float64, 'downstream_4_上汽集团': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15    0.000578
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.005459
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.007730
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.004347
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19    0.000639
+2026-02-13 12:57:58,025 - root - INFO -                 ...
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-25    0.000640
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-26    0.001489
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-29   -0.005173
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-30   -0.000187
+2026-02-13 12:57:58,025 - root - INFO - 2025-12-31   -0.005078
+2026-02-13 12:57:58,025 - root - INFO - Name: downstream_4_上汽集团, Length: 476, dtype: float64, 'LC': 日期
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-15   -0.011696
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-16    0.015048
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-17   -0.020962
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-18    0.000688
+2026-02-13 12:57:58,025 - root - INFO - 2024-01-19   -0.008740
+2026-02-13 12:57:58,026 - root - INFO -                 ...
+2026-02-13 12:57:58,026 - root - INFO - 2025-12-25   -0.008184
+2026-02-13 12:57:58,026 - root - INFO - 2025-12-26    0.048350
+2026-02-13 12:57:58,026 - root - INFO - 2025-12-29   -0.083298
+2026-02-13 12:57:58,026 - root - INFO - 2025-12-30    0.009857
+2026-02-13 12:57:58,026 - root - INFO - 2025-12-31    0.002437
+2026-02-13 12:57:58,026 - root - INFO - Name: LC, Length: 476, dtype: float64}, 'adj_matrix':                      CATL  market_data_1_上证综指  market_data_2_深证成指  ...  downstream_3_长安汽车  downstream_4_上汽集团     LC
+2026-02-13 12:57:58,026 - root - INFO - CATL                False               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - market_data_1_上证综指   True               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - market_data_2_深证成指   True               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - upstream_1_湖南裕能      True               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - upstream_2_盛新锂能     False               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - downstream_1_比亚迪    False               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - downstream_2_长城汽车   False               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - downstream_3_长安汽车   False                True                True  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - downstream_4_上汽集团   False               False               False  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - LC                   True                True                True  ...              False              False  False
+2026-02-13 12:57:58,026 - root - INFO - 
+2026-02-13 12:57:58,026 - root - INFO - [10 rows x 10 columns]}
+2026-02-13 12:57:58,030 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['CATL'] on outcome ['CATL']
+2026-02-13 12:57:58,031 - dowhy.causal_identifier.auto_identifier - WARNING - No directed path from treatment to outcome. Causal Effect is zero.
+2026-02-13 12:57:58,034 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['market_data_1_上证综指'] on outcome ['CATL']
+2026-02-13 12:57:58,036 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,038 - dowhy.causal_identifier.auto_identifier - INFO - Instrumental variables for treatment and outcome:[]
+2026-02-13 12:57:58,038 - dowhy.causal_identifier.auto_identifier - INFO - Frontdoor variables for treatment and outcome:[]
+2026-02-13 12:57:58,039 - dowhy.causal_identifier.auto_identifier - INFO - Number of general adjustment sets found: 1
+2026-02-13 12:57:58,039 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,041 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['market_data_2_深证成指'] on outcome ['CATL']
+2026-02-13 12:57:58,043 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,043 - dowhy.causal_identifier.auto_identifier - INFO - Instrumental variables for treatment and outcome:[]
+2026-02-13 12:57:58,043 - dowhy.causal_identifier.auto_identifier - INFO - Frontdoor variables for treatment and outcome:[]
+2026-02-13 12:57:58,044 - dowhy.causal_identifier.auto_identifier - INFO - Number of general adjustment sets found: 1
+2026-02-13 12:57:58,044 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,046 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['upstream_1_湖南裕能'] on outcome ['CATL']
+2026-02-13 12:57:58,047 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,048 - dowhy.causal_identifier.auto_identifier - INFO - Instrumental variables for treatment and outcome:[]
+2026-02-13 12:57:58,048 - dowhy.causal_identifier.auto_identifier - INFO - Frontdoor variables for treatment and outcome:[]
+2026-02-13 12:57:58,049 - dowhy.causal_identifier.auto_identifier - INFO - Number of general adjustment sets found: 1
+2026-02-13 12:57:58,049 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,051 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['upstream_2_盛新锂能'] on outcome ['CATL']
+2026-02-13 12:57:58,051 - dowhy.causal_identifier.auto_identifier - WARNING - No directed path from treatment to outcome. Causal Effect is zero.
+2026-02-13 12:57:58,054 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['downstream_1_比亚迪'] on outcome ['CATL']
+2026-02-13 12:57:58,054 - dowhy.causal_identifier.auto_identifier - WARNING - No directed path from treatment to outcome. Causal Effect is zero.
+2026-02-13 12:57:58,057 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['downstream_2_长城汽车'] on outcome ['CATL']
+2026-02-13 12:57:58,057 - dowhy.causal_identifier.auto_identifier - WARNING - No directed path from treatment to outcome. Causal Effect is zero.
+2026-02-13 12:57:58,058 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['downstream_3_长安汽车'] on outcome ['CATL']
+2026-02-13 12:57:58,060 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,060 - dowhy.causal_identifier.auto_identifier - INFO - Instrumental variables for treatment and outcome:[]
+2026-02-13 12:57:58,061 - dowhy.causal_identifier.auto_identifier - INFO - Frontdoor variables for treatment and outcome:[]
+2026-02-13 12:57:58,061 - dowhy.causal_identifier.auto_identifier - INFO - Number of general adjustment sets found: 1
+2026-02-13 12:57:58,061 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,064 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['downstream_4_上汽集团'] on outcome ['CATL']
+2026-02-13 12:57:58,064 - dowhy.causal_identifier.auto_identifier - WARNING - No directed path from treatment to outcome. Causal Effect is zero.
+2026-02-13 12:57:58,066 - dowhy.causal_model - INFO - Model to find the causal effect of treatment ['LC'] on outcome ['CATL']
+2026-02-13 12:57:58,067 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.
+2026-02-13 12:57:58,068 - dowhy.causal_identifier.auto_identifier - INFO - Instrumental variables for treatment and outcome:[]
+2026-02-13 12:57:58,068 - dowhy.causal_identifier.auto_identifier - INFO - Frontdoor variables for treatment and outcome:[]
+2026-02-13 12:57:58,069 - dowhy.causal_identifier.auto_identifier - INFO - Number of general adjustment sets found: 1
+2026-02-13 12:57:58,069 - dowhy.causal_identifier.auto_identifier - INFO - Causal effect can be identified.

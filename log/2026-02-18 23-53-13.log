@@ -1,0 +1,293 @@
+2026-02-18 23:53:13,184 - root - INFO - 合并后的价格数据预览：
+2026-02-18 23:53:13,192 - root - INFO -               宁德时代  market_data_1_上证综指  market_data_2_深证成指  upstream_1_湖南裕能  ...  downstream_2_长城汽车  downstream_3_长安汽车  downstream_4_上汽集团        LC
+2026-02-18 23:53:13,193 - root - INFO - 日期                                                                           ...
+2026-02-18 23:53:13,193 - root - INFO - 2024-01-02  286.07             1345.53             1345.53            33.31  ...              83.29             144.59             111.18  108350.0
+2026-02-18 23:53:13,194 - root - INFO - 2024-01-03  284.22             1344.28             1344.28            32.89  ...              81.79             141.02             111.52  106600.0
+2026-02-18 23:53:13,194 - root - INFO - 2024-01-04  275.94             1333.03             1333.03            32.45  ...              80.86             137.06             111.18  100450.0
+2026-02-18 23:53:13,195 - root - INFO - 2024-01-05  275.40             1353.03             1353.03            32.60  ...              80.26             133.89             110.84   98650.0
+2026-02-18 23:53:13,195 - root - INFO - 2024-01-08  273.78             1338.03             1338.03            32.05  ...              78.34             133.10             109.90   97200.0
+2026-02-18 23:53:13,196 - root - INFO - ...            ...                 ...                 ...              ...  ...                ...                ...                ...       ...
+2026-02-18 23:53:13,196 - root - INFO - 2025-12-25  696.42             1834.74             1834.74            67.57  ...              78.10             115.64             121.71  123520.0
+2026-02-18 23:53:13,196 - root - INFO - 2025-12-26  698.97             1832.24             1832.24            71.89  ...              79.93             116.36             121.93  130520.0
+2026-02-18 23:53:13,197 - root - INFO - 2025-12-29  689.76             1834.74             1834.74            68.05  ...              79.42             115.64             121.41  118820.0
+2026-02-18 23:53:13,197 - root - INFO - 2025-12-30  689.56             1824.74             1824.74            67.58  ...              79.09             115.64             121.33  121580.0
+2026-02-18 23:53:13,197 - root - INFO - 2025-12-31  686.07             1815.99             1815.99            65.63  ...              79.48             115.33             120.78  121580.0
+2026-02-18 23:53:13,197 - root - INFO - 
+2026-02-18 23:53:13,197 - root - INFO - [485 rows x 10 columns]
+2026-02-18 23:53:13,198 - root - INFO - Index(['宁德时代', 'market_data_1_上证综指', 'market_data_2_深证成指', 'upstream_1_湖南裕能',
+2026-02-18 23:53:13,198 - root - INFO -        'upstream_2_盛新锂能', 'downstream_1_比亚迪', 'downstream_2_长城汽车',
+2026-02-18 23:53:13,198 - root - INFO -        'downstream_3_长安汽车', 'downstream_4_上汽集团', 'LC'],
+2026-02-18 23:53:13,199 - root - INFO -       dtype='object')
+2026-02-18 23:53:13,199 - root - INFO - Missing values:
+2026-02-18 23:53:13,200 - root - INFO - 宁德时代                  0
+2026-02-18 23:53:13,200 - root - INFO - market_data_1_上证综指    0
+2026-02-18 23:53:13,200 - root - INFO - market_data_2_深证成指    0
+2026-02-18 23:53:13,201 - root - INFO - upstream_1_湖南裕能       0
+2026-02-18 23:53:13,201 - root - INFO - upstream_2_盛新锂能       0
+2026-02-18 23:53:13,201 - root - INFO - downstream_1_比亚迪      0
+2026-02-18 23:53:13,201 - root - INFO - downstream_2_长城汽车     0
+2026-02-18 23:53:13,201 - root - INFO - downstream_3_长安汽车     0
+2026-02-18 23:53:13,201 - root - INFO - downstream_4_上汽集团     0
+2026-02-18 23:53:13,201 - root - INFO - LC                    0
+2026-02-18 23:53:13,202 - root - INFO - dtype: int64
+2026-02-18 23:53:13,203 - root - INFO - Standard deviation of differenced data:
+2026-02-18 23:53:13,204 - root - INFO - 宁德时代                  1.0
+2026-02-18 23:53:13,205 - root - INFO - market_data_1_上证综指    1.0
+2026-02-18 23:53:13,205 - root - INFO - market_data_2_深证成指    1.0
+2026-02-18 23:53:13,205 - root - INFO - upstream_1_湖南裕能       1.0
+2026-02-18 23:53:13,205 - root - INFO - upstream_2_盛新锂能       1.0
+2026-02-18 23:53:13,206 - root - INFO - downstream_1_比亚迪      1.0
+2026-02-18 23:53:13,206 - root - INFO - downstream_2_长城汽车     1.0
+2026-02-18 23:53:13,206 - root - INFO - downstream_3_长安汽车     1.0
+2026-02-18 23:53:13,206 - root - INFO - downstream_4_上汽集团     1.0
+2026-02-18 23:53:13,206 - root - INFO - LC                    1.0
+2026-02-18 23:53:13,206 - root - INFO - dtype: float64
+2026-02-18 23:53:13,208 - root - ERROR - D:\anaconda\Lib\site-packages\statsmodels\tsa\base\tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+2026-02-18 23:53:13,208 - root - ERROR -   self._init_dates(dates, freq)
+2026-02-18 23:53:13,213 - root - ERROR - D:\anaconda\Lib\site-packages\statsmodels\tsa\base\tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+2026-02-18 23:53:13,213 - root - ERROR -   self._init_dates(dates, freq)
+2026-02-18 23:53:13,216 - root - ERROR - D:\anaconda\Lib\site-packages\statsmodels\tsa\base\tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+2026-02-18 23:53:13,216 - root - ERROR -   self._init_dates(dates, freq)
+2026-02-18 23:53:13,218 - root - ERROR - Traceback (most recent call last):
+2026-02-18 23:53:13,220 - root - ERROR -   File "D:\HuaweiMoveData\Users\86180\Desktop\new\main.py", line 56, in <module>
+2026-02-18 23:53:13,220 - root - ERROR - causal_indices, causal_vector, adj_matrix = con.build_granger_causal_network(earnings)
+2026-02-18 23:53:13,220 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,221 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,222 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,224 - root - ERROR - ^
+2026-02-18 23:53:13,225 - root - ERROR - ^
+2026-02-18 23:53:13,225 - root - ERROR - ^
+2026-02-18 23:53:13,225 - root - ERROR - ^
+2026-02-18 23:53:13,225 - root - ERROR - ^
+2026-02-18 23:53:13,225 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,226 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR - ^
+2026-02-18 23:53:13,227 - root - ERROR -   File "D:\HuaweiMoveData\Users\86180\Desktop\new\Construction.py", line 41, in build_granger_causal_network
+2026-02-18 23:53:13,228 - root - ERROR - aic_values.append(var_result.aic)
+2026-02-18 23:53:13,228 - root - ERROR - ^
+2026-02-18 23:53:13,228 - root - ERROR - ^
+2026-02-18 23:53:13,228 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,229 - root - ERROR - ^
+2026-02-18 23:53:13,230 - root - ERROR - ^
+2026-02-18 23:53:13,230 - root - ERROR - ^
+2026-02-18 23:53:13,230 - root - ERROR - ^
+2026-02-18 23:53:13,230 - root - ERROR - ^
+2026-02-18 23:53:13,230 - root - ERROR -   File "D:\anaconda\Lib\site-packages\statsmodels\base\wrapper.py", line 34, in __getattribute__
+2026-02-18 23:53:13,231 - root - ERROR - obj = getattr(results, attr)
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,231 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,232 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,233 - root - ERROR - ^
+2026-02-18 23:53:13,234 - root - ERROR - ^
+2026-02-18 23:53:13,234 - root - ERROR - ^
+2026-02-18 23:53:13,234 - root - ERROR -   File "D:\anaconda\Lib\site-packages\statsmodels\tsa\vector_ar\var_model.py", line 2308, in aic
+2026-02-18 23:53:13,235 - root - ERROR - return self.info_criteria["aic"]
+2026-02-18 23:53:13,235 - root - ERROR - ^
+2026-02-18 23:53:13,235 - root - ERROR - ^
+2026-02-18 23:53:13,236 - root - ERROR - ^
+2026-02-18 23:53:13,236 - root - ERROR - ^
+2026-02-18 23:53:13,236 - root - ERROR - ^
+2026-02-18 23:53:13,236 - root - ERROR - ^
+2026-02-18 23:53:13,236 - root - ERROR - ^
+2026-02-18 23:53:13,237 - root - ERROR - ^
+2026-02-18 23:53:13,237 - root - ERROR - ^
+2026-02-18 23:53:13,237 - root - ERROR - ^
+2026-02-18 23:53:13,238 - root - ERROR - ^
+2026-02-18 23:53:13,238 - root - ERROR - ^
+2026-02-18 23:53:13,238 - root - ERROR - ^
+2026-02-18 23:53:13,238 - root - ERROR - ^
+2026-02-18 23:53:13,238 - root - ERROR - ^
+2026-02-18 23:53:13,240 - root - ERROR - ^
+2026-02-18 23:53:13,240 - root - ERROR - ^
+2026-02-18 23:53:13,240 - root - ERROR - ^
+2026-02-18 23:53:13,240 - root - ERROR -   File "properties.pyx", line 36, in pandas._libs.properties.CachedProperty.__get__
+2026-02-18 23:53:13,241 - root - ERROR -   File "D:\anaconda\Lib\site-packages\statsmodels\tsa\vector_ar\var_model.py", line 2289, in info_criteria
+2026-02-18 23:53:13,242 - root - ERROR - ld = logdet_symm(self.sigma_u_mle)
+2026-02-18 23:53:13,243 - root - ERROR - ^
+2026-02-18 23:53:13,243 - root - ERROR - ^
+2026-02-18 23:53:13,246 - root - ERROR - ^
+2026-02-18 23:53:13,246 - root - ERROR - ^
+2026-02-18 23:53:13,246 - root - ERROR - ^
+2026-02-18 23:53:13,246 - root - ERROR - ^
+2026-02-18 23:53:13,247 - root - ERROR - ^
+2026-02-18 23:53:13,247 - root - ERROR - ^
+2026-02-18 23:53:13,247 - root - ERROR - ^
+2026-02-18 23:53:13,247 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,248 - root - ERROR - ^
+2026-02-18 23:53:13,249 - root - ERROR - ^
+2026-02-18 23:53:13,249 - root - ERROR - ^
+2026-02-18 23:53:13,249 - root - ERROR - ^
+2026-02-18 23:53:13,249 - root - ERROR - ^
+2026-02-18 23:53:13,249 - root - ERROR - ^
+2026-02-18 23:53:13,250 - root - ERROR - ^
+2026-02-18 23:53:13,250 - root - ERROR - ^
+2026-02-18 23:53:13,250 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR - ^
+2026-02-18 23:53:13,251 - root - ERROR -   File "D:\anaconda\Lib\site-packages\statsmodels\tools\linalg.py", line 28, in logdet_symm
+2026-02-18 23:53:13,252 - root - ERROR - c, _ = linalg.cho_factor(m, lower=True)
+2026-02-18 23:53:13,252 - root - ERROR - ^
+2026-02-18 23:53:13,252 - root - ERROR - ^
+2026-02-18 23:53:13,252 - root - ERROR - ^
+2026-02-18 23:53:13,253 - root - ERROR - ^
+2026-02-18 23:53:13,253 - root - ERROR - ^
+2026-02-18 23:53:13,253 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,254 - root - ERROR - ^
+2026-02-18 23:53:13,255 - root - ERROR - ^
+2026-02-18 23:53:13,255 - root - ERROR - ^
+2026-02-18 23:53:13,255 - root - ERROR - ^
+2026-02-18 23:53:13,255 - root - ERROR - ^
+2026-02-18 23:53:13,255 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,257 - root - ERROR - ^
+2026-02-18 23:53:13,258 - root - ERROR - ^
+2026-02-18 23:53:13,258 - root - ERROR - ^
+2026-02-18 23:53:13,258 - root - ERROR - ^
+2026-02-18 23:53:13,258 - root - ERROR - ^
+2026-02-18 23:53:13,258 - root - ERROR - ^
+2026-02-18 23:53:13,259 - root - ERROR - ^
+2026-02-18 23:53:13,259 - root - ERROR -   File "D:\anaconda\Lib\site-packages\scipy\linalg\_decomp_cholesky.py", line 153, in cho_factor
+2026-02-18 23:53:13,259 - root - ERROR - c, lower = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=False,
+2026-02-18 23:53:13,260 - root - ERROR - ^
+2026-02-18 23:53:13,260 - root - ERROR - ^
+2026-02-18 23:53:13,260 - root - ERROR - ^
+2026-02-18 23:53:13,261 - root - ERROR - ^
+2026-02-18 23:53:13,261 - root - ERROR - ^
+2026-02-18 23:53:13,261 - root - ERROR - ^
+2026-02-18 23:53:13,262 - root - ERROR - ^
+2026-02-18 23:53:13,262 - root - ERROR - ^
+2026-02-18 23:53:13,262 - root - ERROR - ^
+2026-02-18 23:53:13,262 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,263 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,264 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,265 - root - ERROR - ^
+2026-02-18 23:53:13,266 - root - ERROR - ^
+2026-02-18 23:53:13,266 - root - ERROR - ^
+2026-02-18 23:53:13,266 - root - ERROR - ^
+2026-02-18 23:53:13,266 - root - ERROR - ^
+2026-02-18 23:53:13,266 - root - ERROR - ^
+2026-02-18 23:53:13,267 - root - ERROR - ^
+2026-02-18 23:53:13,267 - root - ERROR - ^
+2026-02-18 23:53:13,267 - root - ERROR - ^
+2026-02-18 23:53:13,267 - root - ERROR - ^
+2026-02-18 23:53:13,267 - root - ERROR - ^
+2026-02-18 23:53:13,268 - root - ERROR - ^
+2026-02-18 23:53:13,268 - root - ERROR - ^
+2026-02-18 23:53:13,268 - root - ERROR - ^
+2026-02-18 23:53:13,269 - root - ERROR - ^
+2026-02-18 23:53:13,269 - root - ERROR - ^
+2026-02-18 23:53:13,269 - root - ERROR - ^
+2026-02-18 23:53:13,269 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,270 - root - ERROR - ^
+2026-02-18 23:53:13,271 - root - ERROR - ^
+2026-02-18 23:53:13,271 - root - ERROR - ^
+2026-02-18 23:53:13,271 - root - ERROR - ^
+2026-02-18 23:53:13,271 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR - ^
+2026-02-18 23:53:13,272 - root - ERROR -   File "D:\anaconda\Lib\site-packages\scipy\linalg\_decomp_cholesky.py", line 36, in _cholesky
+2026-02-18 23:53:13,273 - root - ERROR - raise LinAlgError("%d-th leading minor of the array is not positive "
+2026-02-18 23:53:13,273 - root - ERROR - numpy.linalg
+2026-02-18 23:53:13,273 - root - ERROR - .
+2026-02-18 23:53:13,273 - root - ERROR - LinAlgError
+2026-02-18 23:53:13,274 - root - ERROR - :
+2026-02-18 23:53:13,274 - root - ERROR - 3-th leading minor of the array is not positive definite

@@ -1,0 +1,177 @@
+2026-03-01 19:15:06,381 - root - ERROR - Traceback (most recent call last):
+2026-03-01 19:15:06,381 - root - ERROR -   File "D:\anaconda\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+2026-03-01 19:15:06,383 - root - ERROR - return self._engine.get_loc(casted_key)
+2026-03-01 19:15:06,384 - root - ERROR - ^
+2026-03-01 19:15:06,384 - root - ERROR - ^
+2026-03-01 19:15:06,385 - root - ERROR - ^
+2026-03-01 19:15:06,385 - root - ERROR - ^
+2026-03-01 19:15:06,385 - root - ERROR - ^
+2026-03-01 19:15:06,386 - root - ERROR - ^
+2026-03-01 19:15:06,386 - root - ERROR - ^
+2026-03-01 19:15:06,386 - root - ERROR - ^
+2026-03-01 19:15:06,386 - root - ERROR - ^
+2026-03-01 19:15:06,387 - root - ERROR - ^
+2026-03-01 19:15:06,389 - root - ERROR - ^
+2026-03-01 19:15:06,390 - root - ERROR - ^
+2026-03-01 19:15:06,390 - root - ERROR - ^
+2026-03-01 19:15:06,390 - root - ERROR - ^
+2026-03-01 19:15:06,390 - root - ERROR - ^
+2026-03-01 19:15:06,390 - root - ERROR - ^
+2026-03-01 19:15:06,391 - root - ERROR - ^
+2026-03-01 19:15:06,391 - root - ERROR - ^
+2026-03-01 19:15:06,391 - root - ERROR - ^
+2026-03-01 19:15:06,391 - root - ERROR - ^
+2026-03-01 19:15:06,391 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,392 - root - ERROR - ^
+2026-03-01 19:15:06,393 - root - ERROR - ^
+2026-03-01 19:15:06,393 - root - ERROR - ^
+2026-03-01 19:15:06,393 - root - ERROR - ^
+2026-03-01 19:15:06,393 - root - ERROR - ^
+2026-03-01 19:15:06,393 - root - ERROR -   File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+2026-03-01 19:15:06,394 - root - ERROR -   File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+2026-03-01 19:15:06,394 - root - ERROR -   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+2026-03-01 19:15:06,395 - root - ERROR -   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+2026-03-01 19:15:06,396 - root - ERROR - KeyError
+2026-03-01 19:15:06,396 - root - ERROR - :
+2026-03-01 19:15:06,396 - root - ERROR - '日期'
+2026-03-01 19:15:06,396 - root - ERROR - The above exception was the direct cause of the following exception:
+2026-03-01 19:15:06,396 - root - ERROR - Traceback (most recent call last):
+2026-03-01 19:15:06,396 - root - ERROR -   File "D:\HuaweiMoveData\Users\86180\Desktop\new\main.py", line 55, in <module>
+2026-03-01 19:15:06,397 - root - ERROR - earnings = pre.data_merge(target_price_data, market_price_data, price_related_data)
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,397 - root - ERROR - ^
+2026-03-01 19:15:06,399 - root - ERROR - ^
+2026-03-01 19:15:06,399 - root - ERROR - ^
+2026-03-01 19:15:06,399 - root - ERROR - ^
+2026-03-01 19:15:06,400 - root - ERROR - ^
+2026-03-01 19:15:06,400 - root - ERROR - ^
+2026-03-01 19:15:06,401 - root - ERROR - ^
+2026-03-01 19:15:06,401 - root - ERROR - ^
+2026-03-01 19:15:06,401 - root - ERROR - ^
+2026-03-01 19:15:06,401 - root - ERROR - ^
+2026-03-01 19:15:06,402 - root - ERROR - ^
+2026-03-01 19:15:06,402 - root - ERROR - ^
+2026-03-01 19:15:06,402 - root - ERROR - ^
+2026-03-01 19:15:06,402 - root - ERROR - ^
+2026-03-01 19:15:06,402 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,403 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,404 - root - ERROR - ^
+2026-03-01 19:15:06,405 - root - ERROR - ^
+2026-03-01 19:15:06,405 - root - ERROR - ^
+2026-03-01 19:15:06,406 - root - ERROR - ^
+2026-03-01 19:15:06,406 - root - ERROR - ^
+2026-03-01 19:15:06,406 - root - ERROR - ^
+2026-03-01 19:15:06,406 - root - ERROR - ^
+2026-03-01 19:15:06,407 - root - ERROR - ^
+2026-03-01 19:15:06,407 - root - ERROR - ^
+2026-03-01 19:15:06,407 - root - ERROR - ^
+2026-03-01 19:15:06,407 - root - ERROR - ^
+2026-03-01 19:15:06,408 - root - ERROR - ^
+2026-03-01 19:15:06,408 - root - ERROR - ^
+2026-03-01 19:15:06,408 - root - ERROR - ^
+2026-03-01 19:15:06,409 - root - ERROR - ^
+2026-03-01 19:15:06,409 - root - ERROR - ^
+2026-03-01 19:15:06,409 - root - ERROR - ^
+2026-03-01 19:15:06,410 - root - ERROR - ^
+2026-03-01 19:15:06,410 - root - ERROR - ^
+2026-03-01 19:15:06,410 - root - ERROR - ^
+2026-03-01 19:15:06,410 - root - ERROR - ^
+2026-03-01 19:15:06,410 - root - ERROR - ^
+2026-03-01 19:15:06,411 - root - ERROR - ^
+2026-03-01 19:15:06,411 - root - ERROR - ^
+2026-03-01 19:15:06,411 - root - ERROR - ^
+2026-03-01 19:15:06,411 - root - ERROR - ^
+2026-03-01 19:15:06,411 - root - ERROR - ^
+2026-03-01 19:15:06,412 - root - ERROR - ^
+2026-03-01 19:15:06,412 - root - ERROR - ^
+2026-03-01 19:15:06,412 - root - ERROR - ^
+2026-03-01 19:15:06,412 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,413 - root - ERROR - ^
+2026-03-01 19:15:06,414 - root - ERROR - ^
+2026-03-01 19:15:06,414 - root - ERROR -   File "D:\HuaweiMoveData\Users\86180\Desktop\new\Preprocessing.py", line 122, in data_merge
+2026-03-01 19:15:06,414 - root - ERROR - target_price_data['date'] = pd.to_datetime(target_price_data['日期'])
+2026-03-01 19:15:06,414 - root - ERROR - ~
+2026-03-01 19:15:06,416 - root - ERROR - ~
+2026-03-01 19:15:06,416 - root - ERROR - ~
+2026-03-01 19:15:06,416 - root - ERROR - ~
+2026-03-01 19:15:06,416 - root - ERROR - ~
+2026-03-01 19:15:06,417 - root - ERROR - ~
+2026-03-01 19:15:06,417 - root - ERROR - ~
+2026-03-01 19:15:06,417 - root - ERROR - ~
+2026-03-01 19:15:06,417 - root - ERROR - ~
+2026-03-01 19:15:06,418 - root - ERROR - ~
+2026-03-01 19:15:06,418 - root - ERROR - ~
+2026-03-01 19:15:06,418 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ~
+2026-03-01 19:15:06,419 - root - ERROR - ^
+2026-03-01 19:15:06,419 - root - ERROR - ^
+2026-03-01 19:15:06,420 - root - ERROR - ^
+2026-03-01 19:15:06,420 - root - ERROR - ^
+2026-03-01 19:15:06,420 - root - ERROR - ^
+2026-03-01 19:15:06,421 - root - ERROR - ^
+2026-03-01 19:15:06,421 - root - ERROR - ^
+2026-03-01 19:15:06,421 - root - ERROR - ^
+2026-03-01 19:15:06,421 - root - ERROR -   File "D:\anaconda\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+2026-03-01 19:15:06,423 - root - ERROR - indexer = self.columns.get_loc(key)
+2026-03-01 19:15:06,426 - root - ERROR - ^
+2026-03-01 19:15:06,427 - root - ERROR - ^
+2026-03-01 19:15:06,427 - root - ERROR - ^
+2026-03-01 19:15:06,427 - root - ERROR - ^
+2026-03-01 19:15:06,428 - root - ERROR - ^
+2026-03-01 19:15:06,428 - root - ERROR - ^
+2026-03-01 19:15:06,428 - root - ERROR - ^
+2026-03-01 19:15:06,429 - root - ERROR - ^
+2026-03-01 19:15:06,429 - root - ERROR - ^
+2026-03-01 19:15:06,429 - root - ERROR - ^
+2026-03-01 19:15:06,429 - root - ERROR - ^
+2026-03-01 19:15:06,431 - root - ERROR - ^
+2026-03-01 19:15:06,431 - root - ERROR - ^
+2026-03-01 19:15:06,432 - root - ERROR - ^
+2026-03-01 19:15:06,432 - root - ERROR - ^
+2026-03-01 19:15:06,432 - root - ERROR - ^
+2026-03-01 19:15:06,433 - root - ERROR - ^
+2026-03-01 19:15:06,434 - root - ERROR - ^
+2026-03-01 19:15:06,434 - root - ERROR - ^
+2026-03-01 19:15:06,435 - root - ERROR - ^
+2026-03-01 19:15:06,435 - root - ERROR - ^
+2026-03-01 19:15:06,436 - root - ERROR - ^
+2026-03-01 19:15:06,436 - root - ERROR - ^
+2026-03-01 19:15:06,436 - root - ERROR - ^
+2026-03-01 19:15:06,436 - root - ERROR - ^
+2026-03-01 19:15:06,438 - root - ERROR -   File "D:\anaconda\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+2026-03-01 19:15:06,440 - root - ERROR - raise KeyError(key) from err
+2026-03-01 19:15:06,441 - root - ERROR - KeyError
+2026-03-01 19:15:06,443 - root - ERROR - :
+2026-03-01 19:15:06,443 - root - ERROR - '日期'

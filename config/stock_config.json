@@ -1,0 +1,1457 @@
+{
+  "target_stock": {
+    "symbol": "sz.300750",
+    "name": "宁德时代"
+  },
+  "market_stock": [
+    {
+      "symbol": "sh.000001",
+      "name": "上证综指"
+    },
+    {
+      "symbol": "sz.399001",
+      "name": "深证成指"
+    },
+    {
+      "symbol": "sz.399006",
+      "name": "创业板指"
+    }
+  ],
+  "related_stock": [
+    {
+      "symbol": "sz.000063",
+      "name": "中兴通讯",
+      "category": "通信"
+    },
+    {
+      "symbol": "sz.000066",
+      "name": "中国长城",
+      "category": "IT"
+    },
+    {
+      "symbol": "sz.000538",
+      "name": "云南白药",
+      "category": "医药"
+    },
+    {
+      "symbol": "sz.000625",
+      "name": "长安汽车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.000651",
+      "name": "格力电器",
+      "category": "消费"
+    },
+    {
+      "symbol": "sz.000725",
+      "name": "京东方A",
+      "category": "科技"
+    },
+    {
+      "symbol": "sz.000792",
+      "name": "盐湖股份",
+      "category": "盐湖提锂"
+    },
+    {
+      "symbol": "sz.000858",
+      "name": "五粮液",
+      "category": "消费"
+    },
+    {
+      "symbol": "sz.000933",
+      "name": "神火股份",
+      "category": "铝业"
+    },
+    {
+      "symbol": "sz.000970",
+      "name": "中科三环",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sz.000977",
+      "name": "浪潮信息",
+      "category": "云计算"
+    },
+    {
+      "symbol": "sz.002012",
+      "name": "凯恩股份",
+      "category": "锂电材料"
+    },
+    {
+      "symbol": "sz.002049",
+      "name": "紫光国微",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.002050",
+      "name": "三花智控",
+      "category": "零部件供应商"
+    },
+    {
+      "symbol": "sz.002074",
+      "name": "国轩高科",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.002080",
+      "name": "中材科技",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.002125",
+      "name": "湘潭电化",
+      "category": "锰矿"
+    },
+    {
+      "symbol": "sz.002156",
+      "name": "通富微电",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.002196",
+      "name": "方正电机",
+      "category": "电机"
+    },
+    {
+      "symbol": "sz.002202",
+      "name": "金风科技",
+      "category": "风电"
+    },
+    {
+      "symbol": "sz.002227",
+      "name": "奥特迅",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002230",
+      "name": "科大讯飞",
+      "category": "人工智能"
+    },
+    {
+      "symbol": "sz.002240",
+      "name": "盛新锂能",
+      "category": "锂资源"
+    },
+    {
+      "symbol": "sz.002241",
+      "name": "歌尔股份",
+      "category": "消费电子"
+    },
+    {
+      "symbol": "sz.002249",
+      "name": "大洋电机",
+      "category": "电机"
+    },
+    {
+      "symbol": "sz.002268",
+      "name": "卫士通",
+      "category": "信息安全"
+    },
+    {
+      "symbol": "sz.002281",
+      "name": "光迅科技",
+      "category": "光模块"
+    },
+    {
+      "symbol": "sz.002326",
+      "name": "永太科技",
+      "category": "锂电材料"
+    },
+    {
+      "symbol": "sz.002340",
+      "name": "格林美",
+      "category": "电池回收"
+    },
+    {
+      "symbol": "sz.002407",
+      "name": "多氟多",
+      "category": "电解质"
+    },
+    {
+      "symbol": "sz.002459",
+      "name": "晶澳科技",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sz.002460",
+      "name": "赣锋锂业",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002465",
+      "name": "海格通信",
+      "category": "通信"
+    },
+    {
+      "symbol": "sz.002466",
+      "name": "天齐锂业",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002475",
+      "name": "立讯精密",
+      "category": "消费电子"
+    },
+    {
+      "symbol": "sz.002480",
+      "name": "新筑股份",
+      "category": "轨道交通"
+    },
+    {
+      "symbol": "sz.002493",
+      "name": "瑞泰科技",
+      "category": "耐火材料"
+    },
+    {
+      "symbol": "sz.002497",
+      "name": "雅化集团",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sz.002518",
+      "name": "科士达",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002544",
+      "name": "普天科技",
+      "category": "通信"
+    },
+    {
+      "symbol": "sz.002594",
+      "name": "比亚迪",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.002709",
+      "name": "天赐材料",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sz.002756",
+      "name": "永兴材料",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002812",
+      "name": "恩捷股份",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.002841",
+      "name": "视源股份",
+      "category": "显示驱动"
+    },
+    {
+      "symbol": "sz.002895",
+      "name": "川恒股份",
+      "category": "磷化工"
+    },
+    {
+      "symbol": "sz.002916",
+      "name": "深南电路",
+      "category": "电子元件"
+    },
+    {
+      "symbol": "sz.002920",
+      "name": "德赛西威",
+      "category": "汽车电子"
+    },
+    {
+      "symbol": "sz.300001",
+      "name": "特锐德",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300014",
+      "name": "亿纬锂能",
+      "category": "电池制造"
+    },
+    {
+      "symbol": "sz.300037",
+      "name": "新宙邦",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sz.300068",
+      "name": "南都电源",
+      "category": "储能系统"
+    },
+    {
+      "symbol": "sz.300073",
+      "name": "当升科技",
+      "category": "正极材料"
+    },
+    {
+      "symbol": "sz.300118",
+      "name": "东方日升",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sz.300124",
+      "name": "汇川技术",
+      "category": "电控"
+    },
+    {
+      "symbol": "sz.300141",
+      "name": "和顺电气",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300274",
+      "name": "阳光电源",
+      "category": "储能系统"
+    },
+    {
+      "symbol": "sz.300351",
+      "name": "永贵电器",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300390",
+      "name": "天华新能",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sz.300410",
+      "name": "正业科技",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300432",
+      "name": "富临精工",
+      "category": "锂电材料"
+    },
+    {
+      "symbol": "sz.300438",
+      "name": "鹏辉能源",
+      "category": "电池制造"
+    },
+    {
+      "symbol": "sz.300450",
+      "name": "先导智能",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300484",
+      "name": "蓝海华腾",
+      "category": "电控"
+    },
+    {
+      "symbol": "sz.300491",
+      "name": "通合科技",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300568",
+      "name": "星源材质",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.300619",
+      "name": "金银河",
+      "category": "锂电池设备"
+    },
+    {
+      "symbol": "sz.300693",
+      "name": "盛弘股份",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300713",
+      "name": "英可瑞",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300745",
+      "name": "欣锐科技",
+      "category": "充电模块"
+    },
+    {
+      "symbol": "sz.300751",
+      "name": "迈为股份",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sh.600000",
+      "name": "浦发银行",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.600030",
+      "name": "中信证券",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.600036",
+      "name": "招商银行",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.600038",
+      "name": "中直股份",
+      "category": "军工"
+    },
+    {
+      "symbol": "sh.600089",
+      "name": "特变电工",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.600096",
+      "name": "云天化",
+      "category": "磷化工"
+    },
+    {
+      "symbol": "sh.600104",
+      "name": "上汽集团",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sh.600110",
+      "name": "诺德股份",
+      "category": "铜箔"
+    },
+    {
+      "symbol": "sh.600111",
+      "name": "北方稀土",
+      "category": "稀土"
+    },
+    {
+      "symbol": "sh.600118",
+      "name": "中国卫星",
+      "category": "航天军工"
+    },
+    {
+      "symbol": "sh.600183",
+      "name": "生益科技",
+      "category": "电子材料"
+    },
+    {
+      "symbol": "sh.600219",
+      "name": "南山铝业",
+      "category": "铝材"
+    },
+    {
+      "symbol": "sh.600276",
+      "name": "恒瑞医药",
+      "category": "医药"
+    },
+    {
+      "symbol": "sh.600305",
+      "name": "恒顺醋业",
+      "category": "消费"
+    },
+    {
+      "symbol": "sh.600312",
+      "name": "平高电气",
+      "category": "储能设备"
+    },
+    {
+      "symbol": "sh.600338",
+      "name": "西藏珠峰",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sh.600362",
+      "name": "江西铜业",
+      "category": "铜材"
+    },
+    {
+      "symbol": "sh.600366",
+      "name": "宁波韵升",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sh.600367",
+      "name": "红星发展",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sh.600395",
+      "name": "盛和资源",
+      "category": "稀土"
+    },
+    {
+      "symbol": "sh.600438",
+      "name": "通威股份",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.600459",
+      "name": "贵研铂业",
+      "category": "铂族金属"
+    },
+    {
+      "symbol": "sh.600460",
+      "name": "士兰微",
+      "category": "储能芯片"
+    },
+    {
+      "symbol": "sh.600516",
+      "name": "方大炭素",
+      "category": "石墨"
+    },
+    {
+      "symbol": "sh.600522",
+      "name": "中天科技",
+      "category": "储能材料"
+    },
+    {
+      "symbol": "sh.600547",
+      "name": "山东黄金",
+      "category": "资源"
+    },
+    {
+      "symbol": "sh.600549",
+      "name": "厦门钨业",
+      "category": "材料"
+    },
+    {
+      "symbol": "sh.600580",
+      "name": "卧龙电驱",
+      "category": "电机"
+    },
+    {
+      "symbol": "sh.600584",
+      "name": "长飞光纤",
+      "category": "通信"
+    },
+    {
+      "symbol": "sh.600596",
+      "name": "新安股份",
+      "category": "化工"
+    },
+    {
+      "symbol": "sh.600606",
+      "name": "绿地控股",
+      "category": "地产"
+    },
+    {
+      "symbol": "sh.600660",
+      "name": "福耀玻璃",
+      "category": "零部件供应商"
+    },
+    {
+      "symbol": "sh.600690",
+      "name": "青岛海尔",
+      "category": "家电"
+    },
+    {
+      "symbol": "sh.600720",
+      "name": "祁连山",
+      "category": "水泥建材"
+    },
+    {
+      "symbol": "sh.600741",
+      "name": "华域汽车",
+      "category": "零部件供应商"
+    },
+    {
+      "symbol": "sh.600745",
+      "name": "闻泰科技",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sh.600756",
+      "name": "浪潮软件",
+      "category": "软件"
+    },
+    {
+      "symbol": "sh.600809",
+      "name": "山西汾酒",
+      "category": "消费"
+    },
+    {
+      "symbol": "sh.600821",
+      "name": "津膜科技",
+      "category": "储能材料"
+    },
+    {
+      "symbol": "sh.600857",
+      "name": "宁波中百",
+      "category": "储能相关"
+    },
+    {
+      "symbol": "sh.600864",
+      "name": "哈投股份",
+      "category": "储能相关"
+    },
+    {
+      "symbol": "sh.600877",
+      "name": "嘉化能源",
+      "category": "储能材料"
+    },
+    {
+      "symbol": "sh.600879",
+      "name": "航天电子",
+      "category": "航天电子"
+    },
+    {
+      "symbol": "sh.600884",
+      "name": "杉杉股份",
+      "category": "负极材料"
+    },
+    {
+      "symbol": "sh.600900",
+      "name": "长江电力",
+      "category": "能源"
+    },
+    {
+      "symbol": "sh.601012",
+      "name": "隆基绿能",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.601088",
+      "name": "中国神华",
+      "category": "能源"
+    },
+    {
+      "symbol": "sh.601186",
+      "name": "中国铁建",
+      "category": "基建"
+    },
+    {
+      "symbol": "sh.601318",
+      "name": "中国平安",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.601398",
+      "name": "工商银行",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.601600",
+      "name": "中国铝业",
+      "category": "铝材"
+    },
+    {
+      "symbol": "sh.601633",
+      "name": "长城汽车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sh.601668",
+      "name": "中国建筑",
+      "category": "基建"
+    },
+    {
+      "symbol": "sh.601669",
+      "name": "中国电建",
+      "category": "储能基建"
+    },
+    {
+      "symbol": "sh.601689",
+      "name": "拓普集团",
+      "category": "零部件供应商"
+    },
+    {
+      "symbol": "sh.601766",
+      "name": "中国中车",
+      "category": "轨道交通"
+    },
+    {
+      "symbol": "sh.601857",
+      "name": "中国石油",
+      "category": "能源"
+    },
+    {
+      "symbol": "sh.601899",
+      "name": "紫金矿业",
+      "category": "金属"
+    },
+    {
+      "symbol": "sh.601919",
+      "name": "中远海控",
+      "category": "航运"
+    },
+    {
+      "symbol": "sh.601985",
+      "name": "中国核电",
+      "category": "能源"
+    },
+    {
+      "symbol": "sh.601988",
+      "name": "中国银行",
+      "category": "金融"
+    },
+    {
+      "symbol": "sh.603005",
+      "name": "晶方科技",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sh.603063",
+      "name": "禾望电气",
+      "category": "电控"
+    },
+    {
+      "symbol": "sh.603126",
+      "name": "华贸物流",
+      "category": "物流"
+    },
+    {
+      "symbol": "sh.603179",
+      "name": "新泉股份",
+      "category": "零部件供应商"
+    },
+    {
+      "symbol": "sh.603259",
+      "name": "药明康德",
+      "category": "医药"
+    },
+    {
+      "symbol": "sh.603333",
+      "name": "明星电力",
+      "category": "电力"
+    },
+    {
+      "symbol": "sh.603507",
+      "name": "振江股份",
+      "category": "储能系统"
+    },
+    {
+      "symbol": "sh.603611",
+      "name": "诺力股份",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sh.603659",
+      "name": "璞泰来",
+      "category": "负极材料"
+    },
+    {
+      "symbol": "sh.603799",
+      "name": "华友钴业",
+      "category": "钴镍矿"
+    },
+    {
+      "symbol": "sh.603806",
+      "name": "福斯特",
+      "category": "光伏材料"
+    },
+    {
+      "symbol": "sh.603868",
+      "name": "雪峰科技",
+      "category": "化工"
+    },
+    {
+      "symbol": "sh.603903",
+      "name": "龙蟠科技",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sh.603986",
+      "name": "兆易创新",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sh.603993",
+      "name": "洛阳钼业",
+      "category": "资源"
+    },
+    {
+      "symbol": "sz.000762",
+      "name": "西藏矿业",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sh.600773",
+      "name": "西藏城投",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002192",
+      "name": "融捷股份",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002176",
+      "name": "江特电机",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.000155",
+      "name": "川能动力",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002738",
+      "name": "中矿资源",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.300618",
+      "name": "寒锐钴业",
+      "category": "钴"
+    },
+    {
+      "symbol": "sh.600711",
+      "name": "盛屯矿业",
+      "category": "钴镍"
+    },
+    {
+      "symbol": "sz.300409",
+      "name": "道氏技术",
+      "category": "正极材料"
+    },
+    {
+      "symbol": "sz.300035",
+      "name": "中科电气",
+      "category": "负极材料"
+    },
+    {
+      "symbol": "sz.002108",
+      "name": "沧州明珠",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.300586",
+      "name": "美联新材",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.002759",
+      "name": "天际股份",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sh.603026",
+      "name": "石大胜华",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sz.300082",
+      "name": "奥克股份",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sh.600210",
+      "name": "紫江企业",
+      "category": "铝塑膜"
+    },
+    {
+      "symbol": "sz.002632",
+      "name": "道明光学",
+      "category": "铝塑膜"
+    },
+    {
+      "symbol": "sz.300457",
+      "name": "赢合科技",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300648",
+      "name": "星云股份",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300340",
+      "name": "科恒股份",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300173",
+      "name": "福能东方",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.300681",
+      "name": "英搏尔",
+      "category": "电机电控"
+    },
+    {
+      "symbol": "sz.300224",
+      "name": "正海磁材",
+      "category": "磁性材料"
+    },
+    {
+      "symbol": "sz.002664",
+      "name": "信质集团",
+      "category": "电机"
+    },
+    {
+      "symbol": "sh.601238",
+      "name": "广汽集团",
+      "category": "整车"
+    },
+    {
+      "symbol": "sh.600733",
+      "name": "北汽蓝谷",
+      "category": "整车"
+    },
+    {
+      "symbol": "sh.600418",
+      "name": "江淮汽车",
+      "category": "整车"
+    },
+    {
+      "symbol": "sh.600006",
+      "name": "东风汽车",
+      "category": "整车"
+    },
+    {
+      "symbol": "sh.601127",
+      "name": "赛力斯",
+      "category": "整车"
+    },
+    {
+      "symbol": "sh.601777",
+      "name": "力帆科技",
+      "category": "整车"
+    },
+    {
+      "symbol": "sz.002276",
+      "name": "万马股份",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300376",
+      "name": "易事特",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002364",
+      "name": "中恒电气",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sh.600405",
+      "name": "动力源",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sh.600406",
+      "name": "国电南瑞",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.300748",
+      "name": "金力永磁",
+      "category": "稀土永磁"
+    },
+    {
+      "symbol": "sz.002129",
+      "name": "TCL中环",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.600732",
+      "name": "爱旭股份",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sz.300393",
+      "name": "中来股份",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.603501",
+      "name": "韦尔股份",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.300223",
+      "name": "北京君正",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.300661",
+      "name": "圣邦股份",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sh.601311",
+      "name": "骆驼股份",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.002733",
+      "name": "雄韬股份",
+      "category": "电池"
+    },
+    {
+      "symbol": "sh.600478",
+      "name": "科力远",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.300207",
+      "name": "欣旺达",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.000049",
+      "name": "德赛电池",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.002245",
+      "name": "蔚蓝锂芯",
+      "category": "电池"
+    },
+    {
+      "symbol": "sh.600869",
+      "name": "远东股份",
+      "category": "电池"
+    },
+    {
+      "symbol": "sh.600875",
+      "name": "东方电气",
+      "category": "风电"
+    },
+    {
+      "symbol": "sz.002531",
+      "name": "天顺风能",
+      "category": "风电"
+    },
+    {
+      "symbol": "sh.603218",
+      "name": "日月股份",
+      "category": "风电"
+    },
+    {
+      "symbol": "sz.300443",
+      "name": "金雷股份",
+      "category": "风电"
+    },
+    {
+      "symbol": "sh.601016",
+      "name": "节能风电",
+      "category": "风电"
+    },
+    {
+      "symbol": "sz.000723",
+      "name": "美锦能源",
+      "category": "氢能源"
+    },
+    {
+      "symbol": "sz.002837",
+      "name": "英维克",
+      "category": "温控"
+    },
+    {
+      "symbol": "sz.000887",
+      "name": "中鼎股份",
+      "category": "汽车零部件"
+    },
+    {
+      "symbol": "sh.600499",
+      "name": "科达制造",
+      "category": "盐湖提锂"
+    },
+    {
+      "symbol": "sz.000408",
+      "name": "藏格矿业",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002141",
+      "name": "贤丰控股",
+      "category": "锂资源"
+    },
+    {
+      "symbol": "sz.000546",
+      "name": "金圆股份",
+      "category": "锂资源"
+    },
+    {
+      "symbol": "sz.002667",
+      "name": "鞍重股份",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sz.002785",
+      "name": "万里石",
+      "category": "锂矿"
+    },
+    {
+      "symbol": "sh.603399",
+      "name": "吉翔股份",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sh.603665",
+      "name": "康隆达",
+      "category": "锂盐"
+    },
+    {
+      "symbol": "sh.601618",
+      "name": "中国中冶",
+      "category": "镍钴资源"
+    },
+    {
+      "symbol": "sh.600490",
+      "name": "鹏欣资源",
+      "category": "钴"
+    },
+    {
+      "symbol": "sz.300477",
+      "name": "合纵科技",
+      "category": "钴"
+    },
+    {
+      "symbol": "sz.002455",
+      "name": "百川股份",
+      "category": "负极材料"
+    },
+    {
+      "symbol": "sz.300080",
+      "name": "易成新能",
+      "category": "负极材料"
+    },
+    {
+      "symbol": "sh.600346",
+      "name": "恒力石化",
+      "category": "隔膜"
+    },
+    {
+      "symbol": "sz.002091",
+      "name": "江苏国泰",
+      "category": "电解液"
+    },
+    {
+      "symbol": "sz.000630",
+      "name": "铜陵有色",
+      "category": "铜箔"
+    },
+    {
+      "symbol": "sz.300490",
+      "name": "华自科技",
+      "category": "电池设备"
+    },
+    {
+      "symbol": "sz.000800",
+      "name": "一汽解放",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.000951",
+      "name": "中国重汽",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sh.600166",
+      "name": "福田汽车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.000550",
+      "name": "江铃汽车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sh.600686",
+      "name": "金龙汽车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.000957",
+      "name": "中通客车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sh.600066",
+      "name": "宇通客车",
+      "category": "整车制造"
+    },
+    {
+      "symbol": "sz.300127",
+      "name": "银河磁体",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sz.000400",
+      "name": "许继电气",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sh.600268",
+      "name": "国电南自",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002028",
+      "name": "思源电气",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sh.603050",
+      "name": "科林电气",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002335",
+      "name": "科华数据",
+      "category": "储能"
+    },
+    {
+      "symbol": "sz.002121",
+      "name": "科陆电子",
+      "category": "储能"
+    },
+    {
+      "symbol": "sh.601222",
+      "name": "林洋能源",
+      "category": "储能"
+    },
+    {
+      "symbol": "sh.601877",
+      "name": "正泰电器",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sz.300327",
+      "name": "中颖电子",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.300458",
+      "name": "全志科技",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.300077",
+      "name": "国民技术",
+      "category": "半导体"
+    },
+    {
+      "symbol": "sz.002126",
+      "name": "银轮股份",
+      "category": "热管理"
+    },
+    {
+      "symbol": "sz.002454",
+      "name": "松芝股份",
+      "category": "热管理"
+    },
+    {
+      "symbol": "sz.002850",
+      "name": "科达利",
+      "category": "结构件"
+    },
+    {
+      "symbol": "sz.002179",
+      "name": "中航光电",
+      "category": "连接器"
+    },
+    {
+      "symbol": "sz.002055",
+      "name": "得润电子",
+      "category": "连接器"
+    },
+    {
+      "symbol": "sz.002741",
+      "name": "光华科技",
+      "category": "电池回收"
+    },
+    {
+      "symbol": "sz.002009",
+      "name": "天奇股份",
+      "category": "电池回收"
+    },
+    {
+      "symbol": "sh.600141",
+      "name": "兴发集团",
+      "category": "磷化工"
+    },
+    {
+      "symbol": "sz.000422",
+      "name": "湖北宜化",
+      "category": "磷化工"
+    },
+    {
+      "symbol": "sz.000902",
+      "name": "新洋丰",
+      "category": "磷化工"
+    },
+    {
+      "symbol": "sh.600160",
+      "name": "巨化股份",
+      "category": "氟化工"
+    },
+    {
+      "symbol": "sz.300382",
+      "name": "斯莱克",
+      "category": "结构件"
+    },
+    {
+      "symbol": "sh.603032",
+      "name": "德新科技",
+      "category": "锂电设备"
+    },
+    {
+      "symbol": "sz.300532",
+      "name": "今天国际",
+      "category": "智能物流"
+    },
+    {
+      "symbol": "sz.002860",
+      "name": "星帅尔",
+      "category": "光伏组件"
+    },
+    {
+      "symbol": "sz.002506",
+      "name": "协鑫集成",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.603185",
+      "name": "上机数控",
+      "category": "光伏设备"
+    },
+    {
+      "symbol": "sz.300724",
+      "name": "捷佳伟创",
+      "category": "光伏设备"
+    },
+    {
+      "symbol": "sz.300316",
+      "name": "晶盛机电",
+      "category": "光伏设备"
+    },
+    {
+      "symbol": "sh.603396",
+      "name": "金辰股份",
+      "category": "光伏设备"
+    },
+    {
+      "symbol": "sh.601908",
+      "name": "京运通",
+      "category": "光伏"
+    },
+    {
+      "symbol": "sh.600876",
+      "name": "洛阳玻璃",
+      "category": "光伏玻璃"
+    },
+    {
+      "symbol": "sz.000012",
+      "name": "南玻A",
+      "category": "光伏玻璃"
+    },
+    {
+      "symbol": "sh.601636",
+      "name": "旗滨集团",
+      "category": "玻璃"
+    },
+    {
+      "symbol": "sz.300174",
+      "name": "元力股份",
+      "category": "超级电容"
+    },
+    {
+      "symbol": "sz.000009",
+      "name": "中国宝安",
+      "category": "综合"
+    },
+    {
+      "symbol": "sh.600699",
+      "name": "均胜电子",
+      "category": "汽车电子"
+    },
+    {
+      "symbol": "sh.603596",
+      "name": "伯特利",
+      "category": "制动系统"
+    },
+    {
+      "symbol": "sh.601799",
+      "name": "星宇股份",
+      "category": "车灯"
+    },
+    {
+      "symbol": "sz.002906",
+      "name": "华阳集团",
+      "category": "汽车电子"
+    },
+    {
+      "symbol": "sh.603197",
+      "name": "保隆科技",
+      "category": "传感器"
+    },
+    {
+      "symbol": "sz.000559",
+      "name": "万向钱潮",
+      "category": "汽车零部件"
+    },
+    {
+      "symbol": "sh.600482",
+      "name": "中国动力",
+      "category": "动力电池"
+    },
+    {
+      "symbol": "sz.002580",
+      "name": "圣阳股份",
+      "category": "电池"
+    },
+    {
+      "symbol": "sz.300217",
+      "name": "东方电热",
+      "category": "加热器"
+    },
+    {
+      "symbol": "sz.002823",
+      "name": "凯中精密",
+      "category": "换向器"
+    },
+    {
+      "symbol": "sh.600577",
+      "name": "精达股份",
+      "category": "电磁线"
+    },
+    {
+      "symbol": "sh.603897",
+      "name": "长城科技",
+      "category": "电磁线"
+    },
+    {
+      "symbol": "sz.002533",
+      "name": "金杯电工",
+      "category": "电磁线"
+    },
+    {
+      "symbol": "sz.002617",
+      "name": "露笑科技",
+      "category": "漆包线"
+    },
+    {
+      "symbol": "sh.600525",
+      "name": "长园集团",
+      "category": "充电桩"
+    },
+    {
+      "symbol": "sz.002056",
+      "name": "横店东磁",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sh.600330",
+      "name": "天通股份",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sh.600980",
+      "name": "北矿科技",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sz.002057",
+      "name": "中钢天源",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sz.000969",
+      "name": "安泰科技",
+      "category": "磁材"
+    },
+    {
+      "symbol": "sz.000795",
+      "name": "英洛华",
+      "category": "磁材"
+    }
+  ]
+}

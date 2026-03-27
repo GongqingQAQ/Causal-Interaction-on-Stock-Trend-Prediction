@@ -1,2 +1,1 @@
-# Causal-Interaction-on-Stock-Trend-Prediction
-# Causal-Interaction-on-Stock-Trend-Prediction
+# Code to Causal Interction on Stock Prediction

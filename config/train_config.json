@@ -1,0 +1,20 @@
+{
+    "seq_length": "8",
+    "target_shift": "1",
+    "hidden_dim": "128",
+    "confounder_dim": "32",
+    "num_samples": "100",
+    "batch_size": "48",
+    "epochs": "10000",
+    "lr": "0.001",
+    "proxy_dim": "32",
+    "patience": "100",
+    "min_delta": "0.001",
+    "n_runs": "5",
+    "train_ratio": "0.6",
+    "random_seed": "15",
+    "num_layers": "1",
+    "dropout": "0.3",
+    "d_model": "64",
+    "nhead": "4"
+}
