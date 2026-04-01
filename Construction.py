@@ -8,7 +8,7 @@ from collections import deque
 import pickle
 import os
 
-def build_granger_causal_network(earnings, stock_config_file='config/stock_config.json', max_lags=8, significance_level=0.1, cache_dir='./causal_cache'):
+def build_granger_causal_network(earnings, stock_config_file='config/stock_config.json', max_lags=8, significance_level=0.005, cache_dir='./causal_cache'):
     """ 
     构建因果网络
     """
