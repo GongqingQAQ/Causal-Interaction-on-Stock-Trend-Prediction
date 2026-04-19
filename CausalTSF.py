@@ -25,10 +25,10 @@ class CausalTSF(nn.Module):
         self.confounder_estimator = nn.Sequential(
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.2),
+            nn.Dropout(0.3),
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.2),
+            nn.Dropout(0.3),
             nn.Linear(hidden_dim, confounder_dim*2)
         )
         
@@ -36,10 +36,10 @@ class CausalTSF(nn.Module):
         self.debiasing_module = nn.Sequential(
             nn.Linear(hidden_dim+confounder_dim, 256),
             nn.ReLU(),
-            nn.Dropout(0.2),
+            nn.Dropout(0.3),
             nn.Linear(256, 128),
             nn.ReLU(),
-            nn.Dropout(0.2),
+            nn.Dropout(0.3),
             nn.Linear(128, hidden_dim),
             nn.ReLU()
         )

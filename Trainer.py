@@ -10,6 +10,7 @@ import json as js
 import CausalTSF as tsf
 import Tradition as tra
 import Transformer as trans
+import LSTM as lstm
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -297,14 +298,12 @@ def train_tradition(earnings, stock_config_file="config/stock_config.json", trai
         print(f"Tradition Run {run+1}/{n_runs} Starting...")
         print(f"{'='*60}")
     
-        # 数据加载器
         train_dataset = TimeSeriesDataset(x_train, y_train)
         test_dataset = TimeSeriesDataset(x_test, y_test)
     
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
         test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     
-        # 初始化模型
         input_dim = x_train.shape[2]
         model = tra.Tradition(input_dim).to(device)
     
@@ -315,7 +314,6 @@ def train_tradition(earnings, stock_config_file="config/stock_config.json", trai
         epochs_without_improvement = 0
     
         for epoch in range(epochs):
-            # 训练
             model.train()
             train_loss = 0.0
             train_true = []
@@ -340,7 +338,6 @@ def train_tradition(earnings, stock_config_file="config/stock_config.json", trai
             train_ic = cal_pearsonr(train_pred_np, train_true_np)
             train_rank_ic = cal_spearmanr(train_pred_np, train_true_np)
         
-            # 记录最佳模型
             if train_r2 > best_train_r2 + min_delta:
                 best_train_r2 = train_r2
                 torch.save(model.state_dict(), 'best_tradition_model.pth')
@@ -348,7 +345,6 @@ def train_tradition(earnings, stock_config_file="config/stock_config.json", trai
             else:
                 epochs_without_improvement += 1
 
-            # 早停检查
             if epochs_without_improvement >= patience:
                 print(f'Early stopping triggered at epoch {epoch+1}. No improvement for {patience} epochs.')
                 break
@@ -356,10 +352,8 @@ def train_tradition(earnings, stock_config_file="config/stock_config.json", trai
             print(f'Epoch of Tradition[{epoch+1}/{epochs}], \n'
                   f'Train Results | R²: {train_r2:.4f} | RMSE: {train_rmse:.4f} | IC: {train_ic:.4f} | RankIC: {train_rank_ic:.4f}\n')
         
-        # 加载最佳模型
         model.load_state_dict(torch.load('best_tradition_model.pth'))
     
-        # 测试集评估
         model.to(device)
         model.eval()
         test_loss = 0.0
@@ -483,6 +477,119 @@ def train_transformer(earnings, stock_config_file="config/stock_config.json", tr
 
 
         model.load_state_dict(torch.load('best_transformer_model.pth'))
+        model.to(device)
+        model.eval()
+        test_true, test_pred = [], []
+        with torch.no_grad():
+            for x_batch, y_batch in test_loader:
+                x_batch, y_batch = x_batch.to(device), y_batch.to(device)
+                outputs = model(x_batch)
+                test_true.append(y_batch.cpu().numpy())
+                test_pred.append(outputs.cpu().numpy().squeeze(-1))
+        test_true_np = np.concatenate(test_true)
+        test_pred_np = np.concatenate(test_pred)
+        test_r2 = r2_score(test_true_np, test_pred_np)
+        test_rmse = np.sqrt(np.mean((test_true_np - test_pred_np)**2))
+        test_ic = cal_pearsonr(test_pred_np, test_true_np)
+        test_rank_ic = cal_spearmanr(test_pred_np, test_true_np)
+
+        metrics['r2'].append(test_r2)
+        metrics['rmse'].append(test_rmse)
+        metrics['ic'].append(test_ic)
+        metrics['rank_ic'].append(test_rank_ic)
+
+        print(f"Run {run+1} Test Results | R²: {test_r2:.4f} | RMSE: {test_rmse:.4f} | IC: {test_ic:.4f} | RankIC: {test_rank_ic:.4f}")
+
+    return model, metrics
+
+def train_lstm(earnings, stock_config_file="config/stock_config.json", train_config_file="config/train_config.json"):
+    """
+    双向LSTM模型训练器
+    """
+    with open(stock_config_file, 'r', encoding='utf-8') as f:
+        stock_config = js.load(f)
+    with open(train_config_file, 'r', encoding='utf-8') as f:
+        train_config = js.load(f)
+
+    target_col = stock_config['target_stock']['name']
+    hidden_dim = int(train_config['hidden_dim'])
+    seq_length = int(train_config['seq_length'])
+    batch_size = int(train_config['batch_size'])
+    epochs = int(train_config['epochs'])
+    lr = float(train_config['lr'])
+    target_shift = int(train_config['target_shift'])
+    patience = int(train_config['patience'])
+    min_delta = float(train_config['min_delta'])
+    n_runs = int(train_config['n_runs'])
+    train_ratio = float(train_config['train_ratio'])
+    random_seed = int(train_config['random_seed'])
+    num_layers = int(train_config['num_layers'])
+    dropout = float(train_config['dropout'])
+
+    x_train, y_train, x_test, y_test = prepare_time_series_data_for_tradition(
+        earnings, seq_length, target_col, target_shift, train_ratio, random_seed
+    )
+
+    metrics = {'r2': [], 'rmse': [], 'ic': [], 'rank_ic': []}
+
+    for run in range(n_runs):
+        print(f"\n{'='*60}")
+        print(f"LSTM Run {run+1}/{n_runs} Starting...")
+        print(f"{'='*60}")
+
+        train_dataset = TimeSeriesDataset(x_train, y_train)
+        test_dataset = TimeSeriesDataset(x_test, y_test)
+        train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+        test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+        input_dim = x_train.shape[2]
+        model = lstm.LSTMNet(input_dim, hidden_dim, num_layers, dropout).to(device)
+        criterion = nn.MSELoss()
+        optimizer = optim.Adam(model.parameters(), lr=lr)
+
+        best_train_r2 = float('-inf')
+        epochs_without_improvement = 0
+
+        for epoch in range(epochs):
+            model.train()
+            train_loss = 0.0
+            train_true, train_pred = [], []
+            for x_batch, y_batch in train_loader:
+                x_batch, y_batch = x_batch.to(device), y_batch.to(device)
+                
+                optimizer.zero_grad()
+                outputs = model(x_batch)
+                loss = criterion(outputs, y_batch.view(-1, 1))
+                loss.backward()
+                optimizer.step()
+                train_loss += loss.item() * x_batch.size(0)
+
+                train_true.append(y_batch.cpu().numpy())
+                train_pred.append(outputs.detach().cpu().numpy().squeeze(-1))
+
+            train_loss /= len(train_loader.dataset)
+            train_true_np = np.concatenate(train_true)
+            train_pred_np = np.concatenate(train_pred)
+            train_r2 = r2_score(train_true_np, train_pred_np)
+            train_rmse = np.sqrt(np.mean((train_true_np - train_pred_np)**2))
+            train_ic = cal_pearsonr(train_pred_np, train_true_np)
+            train_rank_ic = cal_spearmanr(train_pred_np, train_true_np)
+
+            if train_r2 > best_train_r2 + min_delta:
+                best_train_r2 = train_r2
+                torch.save(model.state_dict(), 'best_lstm_model.pth')
+                epochs_without_improvement = 0
+            else:
+                epochs_without_improvement += 1
+
+            if epochs_without_improvement >= patience:
+                print(f'Early stopping at epoch {epoch+1}')
+                break
+
+            print(f'Epoch of LSTM[{epoch+1}/{epochs}], \n'
+                  f'Train Results | R²: {train_r2:.4f} | RMSE: {train_rmse:.4f} | IC: {train_ic:.4f} | RankIC: {train_rank_ic:.4f}\n')
+
+        model.load_state_dict(torch.load('best_lstm_model.pth', map_location=device))
         model.to(device)
         model.eval()
         test_true, test_pred = [], []

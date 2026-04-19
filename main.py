@@ -65,6 +65,7 @@ con.plot_correlation_heatmap(filtered_earnings)
 model_causal_tsf, metrics_causal_tsf = train.train_causal_tsf(filtered_earnings)
 model_tradition, metrics_tradition = train.train_tradition(filtered_earnings)
 model_transformer, metrics_transformer = train.train_transformer(filtered_earnings)
+model_lstm, metrics_lstm = train.train_lstm(filtered_earnings)
 
 # 输出结果
 def print_results(model_name, metrics):
@@ -83,5 +84,6 @@ def print_results(model_name, metrics):
 print_results("Causal-TSF", metrics_causal_tsf)
 print_results("Tradition", metrics_tradition)
 print_results("Transformer", metrics_transformer)
+print_results("LSTM", metrics_lstm)
 
 
